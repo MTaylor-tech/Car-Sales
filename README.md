@@ -28,9 +28,9 @@ This project was put together using create-react-app (CRA). You will not need to
 - [x] Download project dependencies by running `npm install`.
 - [x] Add the dependencies you will need to implement Redux, using **npm**.
 - [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -68,11 +68,11 @@ write the reducer logic for the actions 👉 Rinse and repeat
 
 ## _MVP Requirements:_
 
-- Move the given state to the reducer as the initial state for the Redux store.
-- Set up the Redux flow
-- User should be able to add features to their car
-- User should be able to remove added features from their car
-- Total should update as user adds and removes features from their car
+[x] Move the given state to the reducer as the initial state for the Redux store.
+[x] Set up the Redux flow
+[x] User should be able to add features to their car
+[x] User should be able to remove added features from their car
+[x] Total should update as user adds and removes features from their car
 
 ## Stretch Problems
 
