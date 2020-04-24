@@ -1,4 +1,6 @@
-export const initialState = {
+import {CarReducer, Action} from '../types/types';
+
+export const initialState: CarReducer = {
   additionalPrice: 0,
   car: {
     price: 26395,
@@ -15,7 +17,7 @@ export const initialState = {
   ]
 };
 
-export const carReducer = (state = initialState, action) => {
+export const carReducer = (state = initialState, action: Action): CarReducer => {
   console.log(state, action);
   switch (action.type) {
     case 'ADD_FEATURE':

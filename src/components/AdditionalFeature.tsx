@@ -1,8 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {addFeature} from '../actions/carActions';
+import {CarState} from '../types/types';
 
-const AdditionalFeature = props => {
+const AdditionalFeature = (props: any): JSX.Element => {
   return (
     <li>
       {/* Add an onClick that will let you add a feature to your car */}
@@ -12,7 +13,7 @@ const AdditionalFeature = props => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: CarState) => {
   return {
     additionalPrice: state.carReducer.additionalPrice,
     car: state.carReducer.car,

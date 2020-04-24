@@ -5,18 +5,9 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 import {addFeature, removeFeature} from './actions/carActions';
+import {CarState} from './types/types';
 
-const App = (props) => {
-  const removeFeature = item => {
-    // dispatch an action here to remove an item
-    props.removeFeature(item);
-  };
-
-  const buyItem = item => {
-    // dipsatch an action here to add an item
-    props.addFeature(item);
-  };
-
+const App = (props: any): JSX.Element => {
   return (
     <div className="boxes">
       <div className="box">
@@ -31,10 +22,8 @@ const App = (props) => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: CarState) => {
   // this is where you tell the store what you want access to from the state
-  console.log(state);
-
   return {
     additionalPrice: state.carReducer.additionalPrice,
     car: state.carReducer.car,
